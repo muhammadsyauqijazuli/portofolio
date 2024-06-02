@@ -1,0 +1,159 @@
+.open-sans-title {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  background-color: whitesmoke !important;
+}
+
+.typing-container {
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(200, 200, 200);
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(200, 200, 200);
+  }
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  overflow: hidden;
+  padding-top: 12px; /* Sesuaikan sesuai kebutuhan */
+  padding-bottom: 12px; /* Sesuaikan sesuai kebutuhan */
+  color: #000; /* Warna teks default */
+  transition: color 0.3s; /* Animasi perubahan warna teks */
+}
+
+.navbar-nav .nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: #136af5;
+  transition: all 0.3s;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover {
+  color: #136af5; /* Warna teks saat hover (Bootstrap primary color) */
+}
+
+.navbar-nav .nav-link:hover:after {
+  width: 100%;
+  left: 50%;
+}
+
+.custom-card {
+  width: 380px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.custom-card:hover {
+  transform: translateY(20px);
+  cursor: pointer;
+}
+.custom-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.custom-card:hover:before {
+  opacity: 1;
+}
+.custom-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.custom-card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.custom-card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.custom-card .info h1 {
+  margin: 0;
+}
+.custom-card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.custom-card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+.custom-card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+.margin-10{
+  margin-top: 10rem;
+}
+
