@@ -68,7 +68,8 @@ body {
 }
 
 .custom-card {
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   height: 500px;
   border-radius: 20px;
   padding: 1.5rem;
@@ -78,11 +79,14 @@ body {
   align-items: flex-end;
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+  .custom-card {
+    max-width: 100%;
+  }
+}
+
 .custom-card:hover {
   transform: translateY(20px);
   cursor: pointer;
