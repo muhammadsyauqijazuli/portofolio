@@ -16,6 +16,7 @@ body {
   overflow: hidden;
   border-right: 0.15em solid rgb(200, 200, 200);
   animation: blink-caret 0.75s step-end infinite;
+  -webkit-animation: blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -40,10 +41,14 @@ body {
 .navbar-nav .nav-link {
   position: relative;
   overflow: hidden;
-  padding-top: 12px; /* Sesuaikan sesuai kebutuhan */
-  padding-bottom: 12px; /* Sesuaikan sesuai kebutuhan */
-  color: #000; /* Warna teks default */
-  transition: color 0.3s; /* Animasi perubahan warna teks */
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #000;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:after {
@@ -65,6 +70,18 @@ body {
 .navbar-nav .nav-link:hover:after {
   width: 100%;
   left: 50%;
+}
+
+.navbar-collapse{
+  transition: all .5s !important;
+  -webkit-transition: all .5s !important;
+  -moz-transition: all .5s !important;
+  -ms-transition: all .5s !important;
+  -o-transition: all .5s !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
 }
 
 .custom-card {
@@ -156,8 +173,3 @@ body {
   background: dodgerblue;
   color: white;
 }
-
-.margin-10{
-  margin-top: 10rem;
-}
-
