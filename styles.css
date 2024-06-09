@@ -169,7 +169,12 @@ body {
   -ms-border-radius: 1px;
   -o-border-radius: 1px;
 }
+
 .custom-card .info button:hover {
   background: dodgerblue;
   color: white;
+}
+
+.rounded-pill a:hover{
+  color: white !important;
 }
