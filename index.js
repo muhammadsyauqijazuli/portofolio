@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const texts = [
-    "Roses Are Red",
-    "Violed Are Blue",
-    "Unexpected '}'",
-    "On line 32",
+    "Wordpress Developer From Aceh",
+    "FrondEnd Developer From Aceh",
+    "SEO Spesialist From Aceh",
   ];
   let index = 0;
   let charIndex = 0;
