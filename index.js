@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
   let index = 0;
   let charIndex = 0;
-  const typingSpeed = 30;
-  const erasingSpeed = 30;
+  const typingSpeed = 25;
+  const erasingSpeed = 25;
   const newTextDelay = 800;
   const typingText = document.getElementById("typing-text");
 
