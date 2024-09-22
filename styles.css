@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth!important;
 }
 
 .open-sans-title {
@@ -125,7 +125,9 @@ body {
   .navbar-nav .nav-link:after {
     display: none;
   }
+}
 
+@media (max-width: 960px){
   .back-to-top{
     display: none !important;
   }
